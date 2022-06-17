@@ -1,8 +1,8 @@
 const brcrypt = require("bcryptjs")
 
-const validateUserInput = (email, password)=>{
+const validateUserInput = (username, password)=>{
 
-    return (email && password)
+    return (username && password)
 }
 
 const comparePassword = (password,hashedPassword) =>{

@@ -7,7 +7,7 @@ const path= require("path");
 
 const routers = require("./routers/index.js");
 const swaggerUi = require('swagger-ui-express'),
-    swaggerDocument = require('./swagger.json');
+    swaggerDocument = require('./swagger-output.json');
 
 //Environment Variables
 dotenv.config({
@@ -30,7 +30,7 @@ app.use(cors());
 app.use(express.json()); // Req body ' i json olarak almak için
 
 // Swagger Router
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, { swaggerOptions: { persistAuthorization: true } }));
 // Routers Middleware
 
 app.use("/api",routers);

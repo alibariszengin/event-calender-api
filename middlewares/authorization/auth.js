@@ -4,7 +4,7 @@ const User= require("../../models/User")
 const jwt = require('jsonwebtoken');
 const {isTokenIncluded, getAccessTokenFromHeader} =require("../../helpers/authorization/tokenHelpers");
 const getAccessToRoute = (req, res, next) =>{
-
+    console.log(req.headers)
     const {JWT_SECRET_KEY} = process.env;
     if(!isTokenIncluded(req)){
         return next(new CustomError("You are not authorized to access this route - No Token",401));
