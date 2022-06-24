@@ -11,19 +11,19 @@ const CalendarSchema = new Schema({
     type: String,
     required: [true, "Please provide a title"],
   },
-  tags: [ 
+  tag:
     {
       type: String,
     },
-  ],
+
   description: {
     type: String,
   },  
-  startTime: {
+  start: {
     type: Date,
     default: Date.now(),
   },
-  endTime: {
+  end: {
     type: Date,
     default: Date.now(),
   },

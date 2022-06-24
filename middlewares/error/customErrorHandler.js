@@ -23,7 +23,7 @@ const customErrorHandler = (err,req,res,next) => {
     .status(customError.status || 500)
     .json({
         success: false,
-        message : customError.message 
+        message : customError.message
     });
 };
 

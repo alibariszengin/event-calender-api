@@ -68,7 +68,7 @@ const htmlEmailTemplate = (resetPasswordUrl) =>{
     </tr>
     <tr>
     <td style="-ms-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; color: #9095a2; font-family: 'Postmates Std', 'Helvetica', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; font-size: 16px; font-smoothing: always; font-style: normal; font-weight: 400; letter-spacing: -0.18px; line-height: 24px; mso-line-height-rule: exactly; text-decoration: none; vertical-align: top; width: 100%;">
-                                          You're receiving this e-mail because you requested a password reset for your Warehouse-System-API account.
+                                          You're receiving this e-mail because you requested a password reset for your ComCal account.
                                         </td>
     </tr>
     <tr>
@@ -93,7 +93,7 @@ const htmlEmailTemplate = (resetPasswordUrl) =>{
     <table align="center" cellpadding="0" cellspacing="0" class="footer-center" style="text-align: left; width: 100%; padding-left: 120px; padding-right: 120px;">
     <tbody><tr>
     <td colspan="2" style="padding-top: 72px; padding-bottom: 24px; width: 100%;">
-    <h2 style="width: 124px; height: 20px">Warehouse-System-API</h2>
+    <h2 style="width: 124px; height: 20px">ComCal</h2>
     </td>
     </tr>
     <tr>

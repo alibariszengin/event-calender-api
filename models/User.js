@@ -20,6 +20,12 @@ const UserSchema = new Schema({
       ref: "Calendar",
     },
   ],
+  entegrations:[
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Entegration",
+    }
+  ],
   email: {
     type: String,
     required: [true, "Please provide an email"],

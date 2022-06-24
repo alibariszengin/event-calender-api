@@ -82,7 +82,7 @@ const forgotPassword = asyncErrorWrapper(async (req, res, next) => {
   const resetPasswordToken = user.getResetPasswordTokenFromUser();
   await user.save();
 
-  const resetPasswordUrl = `https://localhost:5000/api/resetpassword`;
+  const resetPasswordUrl = `http://localhost:3000/resetpassword?resetPasswordToken=${resetPasswordToken}`;
 
   const emailTemplate = htmlEmailTemplate(resetPasswordUrl);
   
